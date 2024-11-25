@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -21,16 +21,25 @@
         </ul>
     </nav>
 
-    <!-- Page Content -->
+    <!-- Sell Page Content -->
     <section class="page-content">
         <h1>Sell Your Textbooks</h1>
         <p>List your used textbooks and earn money easily.</p>
-        <!-- Add more content here -->
+
+        <!-- Sell Form -->
+        <form class="sell-form">
+            <input type="text" name="title" placeholder="Book Title" required>
+            <input type="text" name="author" placeholder="Author" required>
+            <input type="number" name="price" placeholder="Price ($)" required>
+            <textarea name="description" placeholder="Description" rows="5"></textarea>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <button type="submit" class="btn">List Textbook</button>
+        </form>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 College Textbooks Reseller</p>
+        <p>&copy; 2023 College Textbooks Reseller</p>
     </footer>
 
 </body>
