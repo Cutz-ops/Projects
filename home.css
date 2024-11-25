@@ -41,6 +41,13 @@ body {
     margin-bottom: 30px;
 }
 
+/* Hero Image */
+.hero img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
 .btn {
     display: inline-block;
     padding: 15px 30px;
@@ -75,6 +82,13 @@ body {
     max-width: 800px;
     margin: 0 auto;
     color: var(--text-color);
+}
+
+/* About Image */
+.about img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
 }
 
 /* Features Section */
@@ -114,19 +128,20 @@ body {
     color: var(--text-color);
 }
 
-/* Footer */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+/* Feature Images */
+.feature img {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 15px;
 }
+
+/* Footer */
+/* Styles are in common.css */
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .hero {
-        padding-top: 100px; /* Adjust for increased navbar height on mobile */
+        padding-top: 100px;
     }
 
     .features {
