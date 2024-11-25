@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -21,16 +21,23 @@
         </ul>
     </nav>
 
-    <!-- Page Content -->
+    <!-- Contact Page Content -->
     <section class="page-content">
         <h1>Contact Us</h1>
         <p>Have questions? Get in touch with us!</p>
-        <!-- You can add a contact form here -->
+
+        <!-- Contact Form -->
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 College Textbooks Reseller</p>
+        <p>&copy; 2023 College Textbooks Reseller</p>
     </footer>
 
 </body>
