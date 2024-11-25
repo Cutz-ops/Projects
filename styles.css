@@ -7,6 +7,10 @@
     align-items: center;
     background-color: #1e90ff;
     padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
 }
 
 .navbar .logo {
@@ -37,26 +41,28 @@
     color: #ff6b6b;
 }
 
-/* Active Link */
 .nav-links .active a {
     color: #ff6b6b;
 }
 
-/* Page Content Section */
-.page-content {
-    padding: 80px 20px;
-    text-align: center;
-    background: #f9f9f9;
+/* Adjust the top padding of the hero section to account for the fixed navbar */
+.hero {
+    padding-top: 80px; /* Adjust this value if your navbar height changes */
 }
 
-.page-content h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-.page-content p {
-    font-size: 1.2em;
-    max-width: 800px;
-    margin: 0 auto;
-    color: #666;
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
 }
